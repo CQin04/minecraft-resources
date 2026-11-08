@@ -1,0 +1,48 @@
+{
+  "original_sha256": "0db34e19d9eeb6d496d20fabe786ec16bbd36ba6b0ccdc8d29cb7e909c114397",
+  "patched_sha256": "476174640ffc18ef0a565d62af6f22b87efd82821effabc31c234af64f124403",
+  "size": 6013952,
+  "changed_bytes": 44,
+  "edits": [
+    {
+      "reason": "PageDownloadInstall.LoaderInit: use existing DlClientListLoader",
+      "file_offset": 180590,
+      "method_rva": 188232,
+      "il_offset": 26,
+      "before": "72754801707efc0900042c077efc0900042b167efa090004fe0669140006738d05000a2580fc0900041418738e05000a",
+      "after": "7e0f04000400000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "reason": "PageDownloadLeft constructor: return after InitializeComponent, like old version",
+      "file_offset": 404991,
+      "method_rva": 412651,
+      "il_offset": 19,
+      "before": "02",
+      "after": "2a"
+    },
+    {
+      "reason": "PageLaunchLeft.RefreshButtonsUI: use existing download state when no game exists",
+      "file_offset": 392649,
+      "method_rva": 400256,
+      "il_offset": 61,
+      "before": "17",
+      "after": "18"
+    },
+    {
+      "reason": "Settings static constructor: SystemSystemUpdate default 0 (automatic download) to 3 (updates off)",
+      "file_offset": 412100,
+      "method_rva": 418936,
+      "il_offset": 832,
+      "before": "16",
+      "after": "19"
+    }
+  ],
+  "reference": "https://github.com/Meloong-Git/PCL/tree/93ede5d9e638c99fcec853a9ba1eecd91ceee7f5",
+  "package_version": "2.99.0.1-download-fix.2",
+  "original_version": "2.99.0.1",
+  "original_build": 415,
+  "published_date": "2026-11-08",
+  "display_name": "Plain Craft Launcher (PCL) CQin04 下载入口修复版",
+  "previous_package_version": "2.99.0.1-download-fix.1",
+  "previous_patched_sha256": "eca243d2f483fb4fca8c1685758bb05d2c3a96b448ce2b89f0e5d3f3c042b1d4"
+}
